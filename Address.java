@@ -1,26 +1,27 @@
 public class Address {
-    public String addrest(String country) {
-        //System.out.println("Addrest:  "+ country);
-        return String.format("country: "+ country);
+
+    public String createAddress(String country) {
+        return String.format("Country: %s", country);
     }
 
-    public String addrest(String country, String city) {
-        //System.out.println("Addrest:  "+ country + ","+ city);
-        return String.format("country: " +country+ ", city: "+city);
+    public String createAddress(String country, String city) {
+        return String.format("Country: %s, City: %s", country, city);
     }
 
-    public String addrest(String country, String city, int code) {
-        //System.out.println("Addrest:  "+ country + ", "+ city + ", " + code);
-        return String.format("country: " +country+ ", city: " +city+ ", code: " +code);
+    public String createAddress(String country, String city, int postalCode) {
+        return String.format("Country: %s, City: %s, PostalCode: %d",
+                country, city, postalCode);
     }
 
-    public String addrest(String country, String city, int code, String street) {
-        //System.out.println("Addrest:  "+ country + ", "+ city + ", " + code +", "+street);
-        return String.format("country: " +country+ ", city: " +city+ ", code: " +code+ ", street:  " +street);
+    public String createAddress(String country, String city, int postalCode, String streetName) {
+        return String.format("Country: %s, City: %s, PostalCode: %d, StreetName: %s",
+                country, city, postalCode, streetName);
     }
 
-    public String addrest(String country, String city, int code, String street, int apartment) {
-        //System.out.println("Addrest:  "+ country + ", "+ city + ", " + code +", "+street+", "+apartment);
-        return String.format("country: " +country+ ", city: " +city+ ", code: " +code+ ", street:  " +street+ ", apartment: " +apartment);
+    public String createAddress(String country, String city, int postalCode, String streetName, int aptNumber) {
+        return String.format("Country: %s, City: %s, PostalCode: %d, StreetName: %s, AptNumber: %d",
+                country, city, postalCode, streetName, aptNumber);
     }
+
+
 }
